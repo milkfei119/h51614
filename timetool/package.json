@@ -1,0 +1,11 @@
+{
+	"author" : "Xia.fei",
+	"name" : "myApp",
+	"version" : "1.0.0",
+	"description" : "审查文档中的敏感关键词",
+	"main" : "myNodeJsApp",
+	"dependencies" : {},
+	"engines" : {
+		"node" : "*"
+	} 
+}
