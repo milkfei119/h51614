@@ -1,0 +1,131 @@
+/*主体底部*/
+#bottom{
+	height: 220px;
+	background: #f5f5f5;
+}
+.bottomWidth{
+	margin: 0 auto;
+}
+#bottom li{
+	float: left;
+}
+#bottom p{
+	color: #959595;
+	font-size: 11px;
+	line-height: 17px;
+}
+#bottom h3{
+	color: #323232;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 30px;
+}
+#bottom ul:first-of-type{
+	height: 77px;
+}
+#bottom ul:first-of-type li{
+	font-size: 17px;
+	padding: 0 33px;
+	line-height: 77px;
+	background: url(../images/line2.png) right center no-repeat;
+}
+#bottom ul:first-of-type li:last-of-type{
+	background: none;
+}
+#bottom ul a{
+	color: #575757;
+}
+#bottom ul:last-of-type li{
+	width: 386px;
+}
+#bottom span{
+	display: inline-block;
+	width: 56px;
+	height: 56px;
+	margin-right: 19px;
+	float: left;
+	margin-top: 5px;
+}
+#bottom ul:last-of-type li:first-of-type span{
+	background: url(../images/foot-feature.png);
+}
+#bottom ul:last-of-type li:nth-of-type(2) span{
+	background: url(../images/foot-feature.png) 0 -56px;
+}
+#bottom ul:last-of-type li:nth-of-type(3) span{
+	background: url(../images/foot-feature.png) 0 -112px;
+}
+/*页脚*/
+#footer{
+	height: 265px;
+	background: #333333;
+	color: #c0c0c0;
+	padding-left: 95px;
+	padding-top: 0.1px;
+}
+.footerWidth{
+	margin: 0 auto;
+}
+.footerWidth a{
+	color: #c0c0c0;
+	
+}
+#footer_top{
+	margin-top: 48px;
+	margin-bottom: 50px;
+}
+#footer_top>p{
+	display: inline-block;
+	line-height: 24px;
+	margin-left: 25px;
+}
+#footer_top div{
+	display: inline-block;
+	margin-left: 98px;
+	height: 48px;
+}
+#footer_top div p{
+	font-size: 17px;
+	float: left;
+	margin-right: 22px;
+	margin-top: 16px;
+}
+#footer_top span{
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	margin-right: 10px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+}
+.footerWidth>p {
+    line-height: 25px;
+}
+.footerWidth>p:first-of-type a{
+	margin-right: 19px;
+}
+.footerWidth>p:first-of-type a:not(#first){
+
+	margin-left: 19px;
+}
+.footerWidth>p:last-of-type a{
+	margin-right: 12px;
+}
+.footerWidth span:first-of-type{
+	background: url(../images/phone.png) no-repeat center;
+}
+.footerWidth span:nth-of-type(2){
+	background: url(../images/wechat1.png) no-repeat center;
+}
+.footerWidth span:nth-of-type(3){
+	background: url(../images/sina1.png) no-repeat center;
+}
+.footerWidth span:nth-of-type(3):hover{
+	opacity: 0.5;
+}
+.footerWidth span:last-of-type{
+	background: url(../images/email.png) no-repeat center;
+}
+.footerWidth span:hover{
+	opacity: 0.5;
+}

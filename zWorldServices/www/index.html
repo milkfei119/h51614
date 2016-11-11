@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div>hello</div>
+	<div id="datas">
+		<h3 id="h"></h3>
+		<p id="p"></p>
+	</div>
+	<button id="btn">获取数据</button>
+	<script>
+		var baseUrl = 'http://10.0.161.46:9000';
+		function createXHR(){
+			//如果浏览器支持XMLHttpRequest，那么直接创建返回该对象
+			if(typeof XMLHttpRequest!='undefined'){
+			return 	new XMLHttpRequest();
+			}else if(typeof ActiveXObject !='undefined'){
+				if(typeof arguments.callee.activeXString != 'string'){
+					var versions = ['MSXML2.XMLHttp.6.0','MSXML2.XMLHttp.3.0','MSXML2.XMLHttp'];
+					for(var i=0;i<versions.length;i++){
+						try{
+							new ActiveXObject(versions[i]);	
+							arguments.callee.activeXString = versions[i]
+						}catch(e){
+						//执行代码错误就会执行cacth代码
+					}
+				}
+			}
+			return new ActiveXObject(arguments.callee.activeXString);
+			}else{
+				//如果是不是别的浏览器，就抛出一个错误
+				throw new Error('无法正常的创建ajax对象');
+			}
+		}
+		var btn = document.getElementById("btn");
+		var datas = document.getElementById("datas");
+		var h3 = document.getElementById("h");
+		var p = document.getElementById("p");
+		btn.onclick = function(){
+			var xhr = createXHR();
+			xhr.open('get',baseUrl+"/znav");
+			xhr.send(null);
+			xhr.onreadystatechange = function(){
+				if(xhr.status == '200' || xhr.status=='304'){
+					if(xhr.readyState == 4){
+						showData(xhr.responseText);
+					}
+				}
+			}
+			function showData(data){
+				var d = JSON.parse(data);
+				h3.innerHTML=d.name;
+				p.innerHTML=d.version;
+				console.log(d);
+			}
+		}
+	</script>
+</body>
+</html>
