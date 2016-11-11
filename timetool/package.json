@@ -1,0 +1,15 @@
+{
+	"author" : "Xia.fei",
+	"name" : "milkfeitool",
+	"version" : "2.0.0",
+	"description" : "打印当前时间",
+	"main" : "main",
+	"repository":{
+		"type" : "git",
+		"url" : "https://github.com/milkfei119/h51614/tree/master/timetool"
+	},
+	"dependencies" : {},
+	"engines" : {
+		"node" : "*"
+	} 
+}
