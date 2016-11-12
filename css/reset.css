@@ -1,0 +1,12 @@
+@charset "utf-8";
+*{ 
+	margin:0; 
+	padding:0; 
+	}
+fieldset, img { border:none; }
+address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:normal; }
+ul, ol { list-style:none; } 
+body { color:#333; font:12px/1.5 Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,Microsoft YaHei,\5b8b\4f53,sans-serif;}
+a { color:#666; text-decoration:none; }
+ .clear{ height:0px;font-size:0;clear:both;}
+
